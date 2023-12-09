@@ -1,0 +1,12 @@
+@import './fonts/fonts.css';
+@import './blocks/page/page.scss';
+
+$font-size: 1rem;
+$font-color: lch(28 99 35);
+
+html {
+    background-color: black;
+    font-size: $font-size;
+    color: $font-color;
+};
+
