@@ -1,0 +1,31 @@
+.change-tour {
+    margin: 135px auto;
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1850px) {
+    .change-tour {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .change-tour {
+        width: 91%;
+        margin-left: 53px;
+        margin-right: 53px;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .change-tour {
+
+        margin-left: 21px;
+        margin-right: 21px;
+
+    }
+}

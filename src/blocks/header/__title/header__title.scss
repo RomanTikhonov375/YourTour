@@ -1,0 +1,27 @@
+@use '../../variables' as v;
+
+.header__title {
+    text-align: center;
+    color: v.$color-white;
+    @include v.H1;
+    width: 768px;
+    height: 315px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 850px) {
+    .header__title {
+        width: 100%;
+        @include v.H2;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header__title {
+        height: auto;
+        margin-top: 52px;
+        margin-bottom: 40px;
+        @include v.Mobile-H1;
+    }
+}

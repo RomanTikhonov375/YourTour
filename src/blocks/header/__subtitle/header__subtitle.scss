@@ -1,0 +1,16 @@
+@use '../../variables' as v;
+
+.header__subtitle {
+    @include v.P-normal;
+    color: v.$color-white;
+    width: 562px;
+    text-align: center;
+    margin: 0 0 46px 0;
+}
+
+@media screen and (max-width: 550px) {
+    .header__subtitle {
+        width: 310px;
+        margin-bottom: 40px;
+    }
+}

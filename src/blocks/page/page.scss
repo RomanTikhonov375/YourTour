@@ -1,9 +1,8 @@
-@use 'variables' as v;
+@use '../variables' as v;
 
 .page {
     background-color: v.$color-biege-100;
     margin: 0 auto;
-    max-width: 1920px;
     min-width: 320px;
     font-family: 'Roboto','Helvetica', sans-serif;
     -webkit-font-smoothing: antialiased;

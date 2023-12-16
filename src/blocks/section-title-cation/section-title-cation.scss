@@ -1,0 +1,9 @@
+@use '../variables' as v;
+
+.section-title-cation {
+    width: 418px;
+    color: v.$color-gray-300;
+    @include v.P-normal;
+    text-align: center;
+    margin: 30px auto 100px;
+}

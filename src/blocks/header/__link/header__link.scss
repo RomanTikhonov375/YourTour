@@ -1,0 +1,13 @@
+@use '../../variables' as v;
+
+
+.header__link {
+    text-decoration: none;
+    color: v.$color-white;
+    @include v.P-normal;
+    box-sizing: border-box;
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}

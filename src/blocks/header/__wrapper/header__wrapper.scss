@@ -1,0 +1,23 @@
+.header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 30px;
+    align-items: center;
+    width: 71%;
+    box-sizing: border-box;
+    
+}
+
+@media screen and (max-width: 1140px) {
+    .header__wrapper {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header__wrapper {
+       
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+@use '../../variables' as v;
+
+.change-tour__link {
+    color: v.$color-black;
+    text-decoration: none;
+    @include v.P-big;
+    &:active {
+        color: v.$color-orange-200;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        transition: color 0.3s;
+    }
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .change-tour__link {
+        @include v.Mobile-P-big;
+    }
+}

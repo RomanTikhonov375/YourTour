@@ -1,0 +1,10 @@
+@use '../../variables' as v;
+
+.cosntruct-tour__form-button {
+    width: 235px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    @include v.P-small;
+    border: 0;
+
+}

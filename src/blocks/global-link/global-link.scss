@@ -1,0 +1,12 @@
+@use '../variables' as v;
+
+.global-link {
+    text-decoration: none;
+    color: v.$color-black;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: v.$color-green-400;
+    }
+}

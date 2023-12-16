@@ -1,0 +1,11 @@
+@use '../../variables' as v;
+
+.costruct-tour__form {
+    display: flex;
+    flex-direction: column;
+    background-color: v.$color-white;
+    padding: 70px;
+    gap: 33px;
+    align-items: flex-start;
+    border-radius: 50px;
+}

@@ -1,0 +1,21 @@
+@use '../../variables' as v;
+
+.cosntruct-tour__form-input {
+    @include v.P-normal;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid v.$color-biege-200;
+    background: v.$color-biege-100;
+    &::placeholder {
+        color: v.$color-gray-300;
+    }
+}
+
+select:invalid {
+    color: v.$color-gray-300;
+}
+
+option {
+    color: v.$color-black;
+}

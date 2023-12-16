@@ -1,0 +1,13 @@
+@use '../../variables' as v;
+
+.change-tour__card-price {
+    color: v.$color-white;
+    @include v.P-small;
+    margin: 16px 0 0 0;
+}
+
+@media screen and (max-width: 850px) {
+    .change-tour__card-price {
+        @include v.Mobile-P-small;
+    }
+}

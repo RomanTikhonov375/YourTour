@@ -1,0 +1,16 @@
+.header__navigation {
+    display: flex;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1140px) {
+    .header__navigation {
+        gap: 30px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .header__navigation {
+        display: none;
+    }
+}

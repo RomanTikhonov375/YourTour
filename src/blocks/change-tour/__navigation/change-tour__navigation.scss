@@ -1,0 +1,15 @@
+.change-tour__navigation {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 850px) {
+    .change-tour__navigation {
+        margin: 30px 21px 50px 21px;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}

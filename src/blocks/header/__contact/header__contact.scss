@@ -1,0 +1,16 @@
+@use '../../variables' as v;
+
+
+.header__contact {
+    color: v.$color-white;
+    @include v.P-normal;
+    margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .header__contact {
+        @include v.Mobile-P-normal;
+        height: 22px;
+        width: 124px;
+    }
+}

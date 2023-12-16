@@ -1,0 +1,12 @@
+@use '../../variables' as v;
+
+.cosntruct-tour__form-reset {
+    background-color: v.$color-green-100;
+    color: v.$color-green-400;
+    &:hover {
+        background-color: v.$color-gray-100;
+    }
+    &:active {
+        background-color: v.$color-gray-200;
+    }
+}

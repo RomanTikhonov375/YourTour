@@ -1,12 +1,43 @@
 @import './fonts/fonts.css';
 @import './blocks/page/page.scss';
 
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+@import './blocks/global-link/global-link.scss';
+@import './blocks/header/header.scss';
+@import './blocks/header/__image/header__image.scss';
+@import './blocks/header/__wrapper/header__wrapper.scss';
+@import './blocks/header/__logo/header__logo.scss';
+@import './blocks/header/__navigation/header__navigation.scss';
+@import './blocks/header/__link/header__link.scss';
+@import './blocks/header/__contact/header__contact.scss';
+@import './blocks/header/__title/header__title.scss';
+@import './blocks/header/__subtitle/header__subtitle.scss';
+@import './blocks/header/__button/header__button.scss';
+@import './blocks/section-title/section-title.scss';
 
-html {
-    background-color: black;
-    font-size: $font-size;
-    color: $font-color;
-};
+@import './blocks/change-tour/change-tour.scss';
+@import './blocks/change-tour/_list/change-tour__list.scss';
+@import './blocks/change-tour/__navigation/change-tour__navigation.scss';
+@import './blocks/change-tour/__link/change-tour__link.scss';
+@import './blocks/change-tour/__card/change-tour__card.scss';
+@import './blocks/change-tour/__card-image/chanhe-tour__card-image.scss';
+@import './blocks/change-tour/__card-wrapper/change-tour__card-wrapper.scss';
+@import './blocks/change-tour/__card-title/change-tour__card-title.scss';
+@import './blocks/change-tour/__card-price/change-tour__card-price.scss';
+@import './blocks/change-tour/__button/change-tour__button.scss';
+
+@import './blocks/construct-tour/construct-tour.scss';
+@import './blocks/section-title-cation/section-title-cation.scss';
+@import './blocks/construct-tour/__form/costruct-tour__form.scss';
+@import './blocks/construct-tour/__form-part/cosntruct-tour__form-part.scss';
+@import './blocks/construct-tour/__form-input-wrapper/cosntruct-tour__form-input-wrapper.scss';
+@import './blocks/construct-tour/__form-label/cosntruct-tour__form-label.scss';
+@import './blocks/construct-tour/__form-input/cosntruct-tour__form-input.scss';
+@import './blocks/construct-tour/__form-radio-wrapper/cosntruct-tour__form-radio-wrapper.scss';
+@import './blocks/construct-tour/__form-checkbox-text/cosntruct-tour__form-checkbox-text.scss';
+@import './blocks/construct-tour/__form-checkbox-wrapper/cosntruct-tour__form-checkbox-wrapper.scss';
+@import './blocks/construct-tour/__form-button-wrapper/cosntruct-tour__form-button-wrapper.scss';
+@import './blocks/construct-tour/__form-button/cosntruct-tour__form-button.scss';
+@import './blocks/construct-tour/__form-submit/cosntruct-tour__form-submit.scss';
+@import './blocks/construct-tour/__form-reset/cosntruct-tour__form-reset.scss';
+
 

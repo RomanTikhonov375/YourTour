@@ -1,0 +1,6 @@
+@use '../../variables' as v;
+
+.cosntruct-tour__form-checkbox-text {
+    color: v.$color-gray-300;
+    @include v.P-small;
+}

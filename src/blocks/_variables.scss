@@ -15,7 +15,7 @@ $color-gray-100: #F1F3F2;
 $color-green-100: #E0F0E5;
 
 // Шрифты
-%H1 {
+@mixin H1 {
     font-size: 96px;
     font-style: normal;
     font-weight: 700;
@@ -23,14 +23,14 @@ $color-green-100: #E0F0E5;
     letter-spacing: 1.92px;
 }
 
-%H2 {
+@mixin H2 {
     font-size: 59px;
     font-style: normal;
     font-weight: 700;
     line-height: 124%;
 }
 
-%H3 {
+@mixin H3 {
 
     font-size: 35px;
     font-style: normal;
@@ -38,21 +38,21 @@ $color-green-100: #E0F0E5;
     line-height: 122%;
 }
 
-%P-big {
+@mixin P-big {
     font-size: 23px;
     font-style: normal;
     font-weight: 700;
     line-height: 122%;
 }
 
-%P-normal {
+@mixin P-normal {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 142%;
 }
 
-%P-small {
+@mixin P-small {
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -60,7 +60,7 @@ $color-green-100: #E0F0E5;
     letter-spacing: -0.17px;
 }
 
-%Mobile-H1 {
+@mixin Mobile-H1 {
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
@@ -68,7 +68,7 @@ $color-green-100: #E0F0E5;
     letter-spacing: 0.68px;
 }
 
-%Mobile-H2 {
+@mixin Mobile-H2 {
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
@@ -76,7 +76,7 @@ $color-green-100: #E0F0E5;
     letter-spacing: 0.68px;
 }
 
-%Mobile-H3 {
+@mixin Mobile-H3 {
     font-size: 23px;
     font-style: normal;
     font-weight: 700;
@@ -84,14 +84,14 @@ $color-green-100: #E0F0E5;
     letter-spacing: 0.92px;
 }
 
-%Mobile-P-big {
+@mixin Mobile-P-big {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 142%;
 }
 
-%Mobile-P-small {
+@mixin Mobile-P-small {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -99,7 +99,7 @@ $color-green-100: #E0F0E5;
     letter-spacing: -0.16px;
 }
 
-%Mobile-P-normal {
+@mixin Mobile-P-normal {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
