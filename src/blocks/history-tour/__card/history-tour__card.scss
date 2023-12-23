@@ -8,7 +8,7 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: 50px;
-    &:hover .change-tour__button {
+    &:hover .card-moreinfo-button {
         background-color: v.$color-green-400 ;
         border-radius: 50px;
     }

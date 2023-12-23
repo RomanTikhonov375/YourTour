@@ -4,7 +4,9 @@
 @import './blocks/page/page.scss';
 @import './blocks/page/main-page.scss';
 
-
+@import './blocks/card-display1024-none/card-display1024-none.scss';
+@import './blocks/card-display360-none/card-display360-none.scss';
+@import './blocks/card-moreinfo-button/card-moreinfo-button.scss';
 @import './blocks/global-link/global-link.scss';
 @import './blocks/header/header.scss';
 @import './blocks/header/__image/header__image.scss';
@@ -27,25 +29,24 @@
 @import './blocks/change-tour/__card-wrapper/change-tour__card-wrapper.scss';
 @import './blocks/change-tour/__card-title/change-tour__card-title.scss';
 @import './blocks/change-tour/__card-price/change-tour__card-price.scss';
-@import './blocks/change-tour/__button/change-tour__button.scss';
 
 @import './blocks/construct-tour/construct-tour.scss';
 @import './blocks/section-title-cation/section-title-cation.scss';
-@import './blocks/construct-tour/__form/costruct-tour__form.scss';
-@import './blocks/construct-tour/__form-part/cosntruct-tour__form-part.scss';
-@import './blocks/construct-tour/__form-input-wrapper/cosntruct-tour__form-input-wrapper.scss';
-@import './blocks/construct-tour/__form-label/cosntruct-tour__form-label.scss';
-@import './blocks/construct-tour/__form-input/cosntruct-tour__form-input.scss';
-@import './blocks/construct-tour/__form-radio-wrapper/cosntruct-tour__form-radio-wrapper.scss';
-@import './blocks/construct-tour/__form-radio-item/cosntruct-tour__form-radio-item.scss';
-@import './blocks/construct-tour/__form-checkbox-text/cosntruct-tour__form-checkbox-text.scss';
-@import './blocks/construct-tour/__form-checkbox-wrapper/cosntruct-tour__form-checkbox-wrapper.scss';
-@import './blocks/construct-tour/__form-label-radio/cosntruct-tour__form-label-radio.scss';
-@import './blocks/construct-tour/__form-label-checkbox/cosntruct-tour__form-label-checkbox.scss';
-@import './blocks/construct-tour/__form-button-wrapper/cosntruct-tour__form-button-wrapper.scss';
-@import './blocks/construct-tour/__form-button/cosntruct-tour__form-button.scss';
-@import './blocks/construct-tour/__form-submit/cosntruct-tour__form-submit.scss';
-@import './blocks/construct-tour/__form-reset/cosntruct-tour__form-reset.scss';
+@import './blocks/construct-tour/__form/construct-tour__form.scss';
+@import './blocks/construct-tour/__form-part/construct-tour__form-part.scss';
+@import './blocks/construct-tour/__form-input-wrapper/construct-tour__form-input-wrapper.scss';
+@import './blocks/construct-tour/__form-label/construct-tour__form-label.scss';
+@import './blocks/construct-tour/__form-input/construct-tour__form-input.scss';
+@import './blocks/construct-tour/__form-radio-wrapper/construct-tour__form-radio-wrapper.scss';
+@import './blocks/construct-tour/__form-radio-item/construct-tour__form-radio-item.scss';
+@import './blocks/construct-tour/__form-checkbox-text/construct-tour__form-checkbox-text.scss';
+@import './blocks/construct-tour/__form-checkbox-wrapper/construct-tour__form-checkbox-wrapper.scss';
+@import './blocks/construct-tour/__form-label-radio/construct-tour__form-label-radio.scss';
+@import './blocks/construct-tour/__form-label-checkbox/construct-tour__form-label-checkbox.scss';
+@import './blocks/construct-tour/__form-button-wrapper/construct-tour__form-button-wrapper.scss';
+@import './blocks/construct-tour/__form-button/construct-tour__form-button.scss';
+@import './blocks/construct-tour/__form-submit/construct-tour__form-submit.scss';
+@import './blocks/construct-tour/__form-reset/construct-tour__form-reset.scss';
 
 @import './blocks/user-reviews/user-reviews.scss';
 @import './blocks/user-reviews/__list/user-reviews__list.scss';
@@ -56,7 +57,6 @@
 @import './blocks/photo-galary/__card-row-wrapper-even/photo-galary__card-row-wrapper.scss';
 @import './blocks/photo-galary/__card/photo-galary__card.scss';
 @import './blocks/photo-galary/__card-image/photo-galary__card-image.scss';
-@import './blocks/photo-galary/__card/_display/photo-galary__card_display1024_none.scss';
 
 @import './blocks/user-reviews/__card-text/user-reviews__card-text.scss';
 @import './blocks/user-reviews/__card-user/user-reviews__card-user.scss';
@@ -79,7 +79,6 @@
 @import './blocks/history-tour/__card-text-list-item/history-tour__card-text-list-item.scss';
 @import './blocks/history-tour/__card-link/history-tour__card-link.scss';
 
-@import './blocks/photo-galary/__card/_display/photo-galary__card_display360_none.scss';
 @import './blocks/call-to-action/call-to-action.scss';
 @import './blocks/call-to-action/__wrapper/call-to-action__wrapper.scss';
 @import './blocks/call-to-action/__image/call-to-action__image.scss';

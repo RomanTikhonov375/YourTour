@@ -1,0 +1,14 @@
+.construct-tour__form-checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+@media screen and (max-width: 500px) {
+    .construct-tour__form-checkbox-wrapper {
+        width: 95%;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../../variables' as v;
+
+.construct-tour__form-submit {
+    background-color: v.$color-green-400;
+    color: v.$color-white;
+    &:hover {
+        background-color: v.$color-green-300;
+    }
+    &:active {
+        background-color: v.$color-green-200;
+    }
+}

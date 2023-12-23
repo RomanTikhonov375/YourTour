@@ -1,0 +1,39 @@
+@use '../../variables' as v;
+
+.construct-tour__form-input {
+    -webkit-appearance: none;
+    @include v.P-normal;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid v.$color-biege-200;
+    background: v.$color-biege-100;
+    &::placeholder {
+        color: v.$color-gray-300;
+    }
+    &:hover {
+        background: v.$color-biege-200;
+    }
+    &:focus {
+        border: 1px solid v.$color-gray-300;
+    }
+    &:focus-visible {
+        outline: 0;
+    }
+    
+}
+
+select:invalid {
+    color: v.$color-gray-300;
+}
+
+option {
+    color: v.$color-black;
+}
+
+@media screen and (max-width: 500px) {
+    .construct-tour__form-input {
+        @include v.Mobile-P-normal;
+        padding: 10px;
+    }
+}

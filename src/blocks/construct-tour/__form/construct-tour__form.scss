@@ -1,0 +1,25 @@
+@use '../../variables' as v;
+
+.construct-tour__form {
+    display: flex;
+    flex-direction: column;
+    background-color: v.$color-white;
+    padding: 70px;
+    gap: 33px;
+    align-items: flex-start;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1050px) {
+    .construct-tour__form {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .construct-tour__form {
+        gap: 30px;
+        padding: 20px 20px 40px 20px;
+        border-radius: 30px;
+    }
+}

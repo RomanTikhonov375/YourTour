@@ -1,6 +1,7 @@
 @use '../../variables' as v;
 
 .history-tour__card-link {
+    text-decoration: none;
     color: v.$color-white;
     @include v.P-normal;
     cursor: pointer;

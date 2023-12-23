@@ -1,0 +1,12 @@
+.construct-tour__form-button-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .construct-tour__form-button-wrapper {
+        width: 100%;
+        gap: 0px;
+        justify-content: space-between;
+    }
+}
