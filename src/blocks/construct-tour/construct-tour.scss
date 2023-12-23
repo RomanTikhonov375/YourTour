@@ -1,4 +1,10 @@
 .construct-tour {
-    width: 62%;
+    width: 1170px;
     margin: auto;
+}
+
+@media screen and (max-width: 1190px) {
+    .construct-tour {
+        width: 90%;
+    }
 }

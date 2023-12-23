@@ -5,5 +5,19 @@
     color: v.$color-gray-300;
     @include v.P-normal;
     text-align: center;
-    margin: 30px auto 100px;
+    margin: 30px auto 96px;
+}
+
+@media screen and (max-width: 500px) {
+    .section-title-cation {
+        width: 100%;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-title-cation {
+    
+        margin: 20px auto 40px;
+        @include v.Mobile-P-normal;
+    }
 }

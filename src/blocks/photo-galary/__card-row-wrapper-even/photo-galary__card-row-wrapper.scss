@@ -1,0 +1,19 @@
+.photo-galary__card-row-wrapper {
+    display: flex;
+    gap: 30px;
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .photo-galary__card-row-wrapper {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .photo-galary__card-row-wrapper {
+        gap: 10px;
+        height: 110px;
+    }
+}

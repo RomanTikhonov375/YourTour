@@ -2,9 +2,11 @@
 
 
 .header__contact {
-    color: v.$color-white;
+    position: relative;
+    color: inherit;
     @include v.P-normal;
     margin: 0;
+    z-index: 3;
 }
 
 @media screen and (max-width: 400px) {

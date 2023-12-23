@@ -8,9 +8,10 @@
     margin: 0 0 46px 0;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 590px) {
     .header__subtitle {
-        width: 310px;
+        @include v.Mobile-P-normal;
+        width: 300px;
         margin-bottom: 40px;
     }
 }

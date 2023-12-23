@@ -3,7 +3,7 @@
 
 .header__link {
     text-decoration: none;
-    color: v.$color-white;
+    color: inherit;
     @include v.P-normal;
     box-sizing: border-box;
     &:hover {

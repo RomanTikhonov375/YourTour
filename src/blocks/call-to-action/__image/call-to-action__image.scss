@@ -1,0 +1,17 @@
+.call-to-action__image {
+    display: block;
+    border-radius: 50px;
+    object-fit: cover;
+    z-index: 0;
+    flex-shrink: 0;
+    width: 370px;
+    height: 370px;
+}
+
+@media screen and (max-width: 500px) {
+    .call-to-action__image {
+        width: 130px;
+        height: 133px;
+        border-radius: 20px;
+    }
+}

@@ -1,6 +1,7 @@
 @use '../../variables' as v;
 
 .cosntruct-tour__form-input {
+    -webkit-appearance: none;
     @include v.P-normal;
     padding: 20px;
     margin: 0;
@@ -10,6 +11,16 @@
     &::placeholder {
         color: v.$color-gray-300;
     }
+    &:hover {
+        background: v.$color-biege-200;
+    }
+    &:focus {
+        border: 1px solid v.$color-gray-300;
+    }
+    &:focus-visible {
+        outline: 0;
+    }
+    
 }
 
 select:invalid {
@@ -18,4 +29,11 @@ select:invalid {
 
 option {
     color: v.$color-black;
+}
+
+@media screen and (max-width: 500px) {
+    .cosntruct-tour__form-input {
+        @include v.Mobile-P-normal;
+        padding: 10px;
+    }
 }

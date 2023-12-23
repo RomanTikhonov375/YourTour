@@ -1,0 +1,37 @@
+.cosntruct-tour__form-label-radio {
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 37px;
+	margin-right: 0;
+    user-select: none;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        background: url('./images/radiobutton.svg') 0 0 no-repeat;
+    }
+}
+
+input[type=radio]:checked + .cosntruct-tour__form-label-radio:before {
+	background: url('./images/radiobutton-checked.svg') 0 0 no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+    .cosntruct-tour__form-label-radio {
+        padding-left: 30px;
+        &::before {
+            width: 20px;
+            height: 20px;
+            background: url('./images/mobile-radiobutton.svg') 0 0 no-repeat;
+        }
+    }
+
+    input[type=radio]:checked + .cosntruct-tour__form-label-radio:before {
+        background: url('./images/mobile-radiobutton-checked.svg') 0 0 no-repeat;
+    }
+}

@@ -1,0 +1,12 @@
+.user-reviews__card-user {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 63px;
+}
+
+@media screen and (max-width: 850px) {
+    .user-reviews__card-user {
+        padding-top: 40px;
+        align-items: flex-end;
+    }
+}

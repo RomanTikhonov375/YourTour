@@ -1,4 +1,11 @@
 .header {
     width: 100%;
     height: auto;
+    margin-bottom: 135px;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        margin-bottom: 75px;
+    }
 }

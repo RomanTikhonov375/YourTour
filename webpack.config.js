@@ -27,7 +27,10 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader',
+          options: { importLoaders: 1 }
+        }, 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpg|jpeg|svg|gif)$/,
@@ -48,7 +51,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'template.html'),
+      template: path.join(__dirname, 'src', 'index.html'),
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

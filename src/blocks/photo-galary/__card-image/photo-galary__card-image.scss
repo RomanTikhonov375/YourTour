@@ -1,0 +1,13 @@
+.photo-galary__card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .photo-galary__card-image {
+        height: 110px;
+        border-radius: 20px;
+    }
+}

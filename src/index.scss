@@ -1,5 +1,9 @@
+@import './blocks/vendor/normalize.css';
+
 @import './fonts/fonts.css';
 @import './blocks/page/page.scss';
+@import './blocks/page/main-page.scss';
+
 
 @import './blocks/global-link/global-link.scss';
 @import './blocks/header/header.scss';
@@ -19,7 +23,7 @@
 @import './blocks/change-tour/__navigation/change-tour__navigation.scss';
 @import './blocks/change-tour/__link/change-tour__link.scss';
 @import './blocks/change-tour/__card/change-tour__card.scss';
-@import './blocks/change-tour/__card-image/chanhe-tour__card-image.scss';
+@import './blocks/change-tour/__card-image/change-tour__card-image.scss';
 @import './blocks/change-tour/__card-wrapper/change-tour__card-wrapper.scss';
 @import './blocks/change-tour/__card-title/change-tour__card-title.scss';
 @import './blocks/change-tour/__card-price/change-tour__card-price.scss';
@@ -33,11 +37,64 @@
 @import './blocks/construct-tour/__form-label/cosntruct-tour__form-label.scss';
 @import './blocks/construct-tour/__form-input/cosntruct-tour__form-input.scss';
 @import './blocks/construct-tour/__form-radio-wrapper/cosntruct-tour__form-radio-wrapper.scss';
+@import './blocks/construct-tour/__form-radio-item/cosntruct-tour__form-radio-item.scss';
 @import './blocks/construct-tour/__form-checkbox-text/cosntruct-tour__form-checkbox-text.scss';
 @import './blocks/construct-tour/__form-checkbox-wrapper/cosntruct-tour__form-checkbox-wrapper.scss';
+@import './blocks/construct-tour/__form-label-radio/cosntruct-tour__form-label-radio.scss';
+@import './blocks/construct-tour/__form-label-checkbox/cosntruct-tour__form-label-checkbox.scss';
 @import './blocks/construct-tour/__form-button-wrapper/cosntruct-tour__form-button-wrapper.scss';
 @import './blocks/construct-tour/__form-button/cosntruct-tour__form-button.scss';
 @import './blocks/construct-tour/__form-submit/cosntruct-tour__form-submit.scss';
 @import './blocks/construct-tour/__form-reset/cosntruct-tour__form-reset.scss';
+
+@import './blocks/user-reviews/user-reviews.scss';
+@import './blocks/user-reviews/__list/user-reviews__list.scss';
+@import './blocks/user-reviews/__card/user-reviews__card.scss';
+
+@import './blocks/photo-galary/photo-galary.scss';
+@import './blocks/photo-galary/__card-list/photo-galary__card-list.scss';
+@import './blocks/photo-galary/__card-row-wrapper-even/photo-galary__card-row-wrapper.scss';
+@import './blocks/photo-galary/__card/photo-galary__card.scss';
+@import './blocks/photo-galary/__card-image/photo-galary__card-image.scss';
+@import './blocks/photo-galary/__card/_display/photo-galary__card_display1024_none.scss';
+
+@import './blocks/user-reviews/__card-text/user-reviews__card-text.scss';
+@import './blocks/user-reviews/__card-user/user-reviews__card-user.scss';
+@import './blocks/user-reviews/__card-user-wrapper/user-reviews__card-user-wrapper.scss';
+@import './blocks/user-reviews/__card-user-name/user-reviews__card-user-name.scss';
+@import './blocks/user-reviews/__card-user-tour/user-reviews__card-user-tour.scss';
+@import './blocks/user-reviews/__card-user-avatar/user-reviews__card-user-avatar.scss';
+
+@import './blocks/history-tour/history-tour.scss';
+@import './blocks/history-tour/__list/history-tour__list.scss';
+@import './blocks/history-tour/__card/history-tour__card.scss';
+@import './blocks/history-tour/__card-wrapper/history-tour__card-wrapper.scss';
+@import './blocks/history-tour/__card-image/history-tour__card-image.scss';
+@import './blocks/history-tour/__card-text-wrapper/history-tour__card-text-wrapper.scss';
+@import './blocks/history-tour/__card-header/history-tour__card-header.scss';
+@import './blocks/history-tour/__card-text/history-tour__card-text.scss';
+@import './blocks/history-tour/__card-text-list/history-tour__card-text-list.scss';
+@import './blocks/history-tour/__card-footer/history-tour__card-footer.scss';
+@import './blocks/history-tour/__card-links/history-tour__card-links.scss';
+@import './blocks/history-tour/__card-text-list-item/history-tour__card-text-list-item.scss';
+@import './blocks/history-tour/__card-link/history-tour__card-link.scss';
+
+@import './blocks/photo-galary/__card/_display/photo-galary__card_display360_none.scss';
+@import './blocks/call-to-action/call-to-action.scss';
+@import './blocks/call-to-action/__wrapper/call-to-action__wrapper.scss';
+@import './blocks/call-to-action/__image/call-to-action__image.scss';
+@import './blocks/call-to-action/__text-wrapper/call-to-action__text-wrapper.scss';
+@import './blocks/call-to-action/__header/call-to-action__header.scss';
+@import './blocks/call-to-action/__caption/call-to-action__caption.scss';
+
+@import './blocks/footer/footer.scss';
+@import './blocks/footer/__wrapper/footer__wrapper.scss';
+@import './blocks/footer/__caption/footer__caption.scss';
+@import './blocks/footer/__navigation/footer__navigation.scss';
+@import './blocks/footer/__links/footer__links.scss';
+@import './blocks/footer/__item/footer__item.scss';
+@import './blocks/footer/__link-icon/footer__link-icon.scss';
+@import './blocks/footer/__link/footer__link.scss';
+@import './blocks/header/__scroll/header__scroll.scss';
 
 

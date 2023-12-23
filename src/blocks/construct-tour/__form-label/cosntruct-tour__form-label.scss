@@ -5,3 +5,9 @@
     color: v.$color-black;
     @include v.P-normal;
 }
+
+@media screen and (max-width: 500px) {
+    .cosntruct-tour__form-label {
+        @include v.Mobile-P-normal;
+    }
+}

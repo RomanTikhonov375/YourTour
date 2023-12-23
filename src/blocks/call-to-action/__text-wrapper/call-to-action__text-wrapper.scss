@@ -1,0 +1,15 @@
+.call-to-action__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 371px;
+}
+
+@media screen and (max-width: 500px) {
+    .call-to-action__text-wrapper {
+        width: 291px;
+        height: auto;
+    }
+}

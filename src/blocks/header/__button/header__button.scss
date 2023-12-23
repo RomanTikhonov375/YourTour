@@ -11,11 +11,19 @@
         background-color: v.$color-orange-200;
         transition: background-color 1s;
     }
+    &:active {
+        background-color: v.$color-orange-100;
+        transition: background-color 1s;
+        color: v.$color-black;
+    }
 }
 
 @media screen and (max-width: 550px) {
     .header__button {
-        margin-bottom: 52px;
+        @include v.Mobile-P-small;
+        border-width: 1px;
+        padding: 5px 20px 5px 20px;
+        margin-bottom: 58px;
     }
 }
 

@@ -1,7 +1,7 @@
 .change-tour__list {
     display: grid;
     max-width: 100%;
-    gap: 30px;
+    grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, 370px);
     grid-auto-rows: 531px;
     padding: 0;
@@ -11,6 +11,7 @@
 
 @media screen and (max-width: 1050px) {
     .change-tour__list {
+        grid-gap: 18px;
         grid-template-columns: repeat(auto-fit, 450px);
     }
 }

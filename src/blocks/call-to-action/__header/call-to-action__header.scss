@@ -1,0 +1,14 @@
+@use '../../variables' as v;
+
+.call-to-action__header {
+    @include v.H3;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .call-to-action__header {
+        text-align: center;
+        @include v.Mobile-H3;
+    }
+}

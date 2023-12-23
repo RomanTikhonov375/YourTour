@@ -1,0 +1,18 @@
+@use '../../variables' as v;
+
+.footer__link {
+    text-decoration: none;
+    @include v.P-normal;
+    color: v.$color-black;
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer__link {
+        @include v.Mobile-P-normal;
+        text-align: center;
+    }
+}

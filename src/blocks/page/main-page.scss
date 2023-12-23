@@ -1,0 +1,19 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    gap: 135px;
+}
+
+@media screen and (max-width: 500px) {
+    .main-page {
+        gap: 75px;
+    }
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="checkbox"] {
+    display:none;
+}

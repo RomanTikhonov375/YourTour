@@ -1,6 +1,9 @@
 .header__navigation {
+    position: relative;
     display: flex;
     gap: 50px;
+    z-index: 3;
+    color: inherit;
 }
 
 @media screen and (max-width: 1140px) {

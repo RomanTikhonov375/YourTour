@@ -1,0 +1,13 @@
+@use '../../variables' as v;
+
+.history-tour__card-link {
+    color: v.$color-white;
+    @include v.P-normal;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: v.$color-orange-200
+    }
+}

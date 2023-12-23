@@ -1,0 +1,53 @@
+@use '../../variables' as v;
+
+.history-tour__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+    &:hover .change-tour__button {
+        background-color: v.$color-green-400 ;
+        border-radius: 50px;
+    }
+    &:hover .history-tour__card-image {
+        transform: scale(1.2);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+        border-radius: 50px;
+        
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .history-tour__card {
+        height: 567px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .history-tour__card {
+        border-radius: 20px;
+        &::after {
+            border-radius: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .history-tour__card {
+        height: 455px;
+    }
+}
