@@ -1,8 +1,9 @@
 # YourTour
 Сайт о путешествиях
 
-# Запуск dev сервера 
-npm run dev
 
-# Запуск для procution 
-npm run build
+** npm run dev
+** npm run build
+
+## ссылка на GH Pages :
+https://romantikhonov375.github.io/YourTour/
