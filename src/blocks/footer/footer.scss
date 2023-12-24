@@ -1,6 +1,9 @@
+@use '../variables' as v;
+
 .footer {
     display: flex;
     height: 88px;
+    background-color: v.$color-biege-200;
     justify-content: center;
     align-items: center;
     gap: 214px;
