@@ -8,12 +8,15 @@
     border-radius: 10px;
     border: 1px solid v.$color-biege-200;
     background: v.$color-biege-100;
+    @media (hover: hover) {
+        &:hover {
+            background: v.$color-biege-200;
+        }
+    }
     &::placeholder {
         color: v.$color-gray-300;
     }
-    &:hover {
-        background: v.$color-biege-200;
-    }
+
     &:focus {
         border: 1px solid v.$color-gray-300;
     }

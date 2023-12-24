@@ -3,9 +3,9 @@
 @import './fonts/fonts.css';
 @import './blocks/page/page.scss';
 @import './blocks/page/main-page.scss';
+@import './blocks/card-moreinfo-button/__icon/card-moreinfo-button__icon.scss';
 
-@import './blocks/card-display1024-none/card-display1024-none.scss';
-@import './blocks/card-display360-none/card-display360-none.scss';
+
 @import './blocks/card-moreinfo-button/card-moreinfo-button.scss';
 @import './blocks/global-link/global-link.scss';
 @import './blocks/header/header.scss';
@@ -95,5 +95,7 @@
 @import './blocks/footer/__link-icon/footer__link-icon.scss';
 @import './blocks/footer/__link/footer__link.scss';
 @import './blocks/header/__scroll/header__scroll.scss';
+@import './blocks/card-display1024-none/card-display1024-none.scss';
+@import './blocks/card-display360-none/card-display360-none.scss';
 
 

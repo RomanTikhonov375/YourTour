@@ -1,6 +1,9 @@
 @use '../variables' as v;
 
 .card-moreinfo-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
     color: v.$color-white;
     @include v.P-big;
     background: transparent;
@@ -8,13 +11,13 @@
     width: 200px;
     height: 42px;
     transform: translateX(-20px);
+    padding: 7px 20px;
     
 }
 
 @media screen and (max-width: 850px) {
     .card-moreinfo-button {
         @include v.Mobile-P-big;
-        width: 123px;
-        height: 26px
+        transform: translateX(-20px);
     }
 }
