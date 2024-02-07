@@ -13,3 +13,9 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .change-tour__navigation {
+       margin-bottom: 44px;
+    }
+}

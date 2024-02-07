@@ -25,6 +25,7 @@ input[type=checkbox]:checked + .construct-tour__form-label-checkbox:before {
     .construct-tour__form-label-checkbox {
         padding-left: 30px;
         &::before {
+            top: 0;
             width: 20px;
             height: 20px;
             background: url('./images/mobile-checkboxbutton.svg') 0 0 no-repeat;

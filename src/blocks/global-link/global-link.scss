@@ -3,9 +3,12 @@
 .global-link {
     text-decoration: none;
     color: v.$color-black;
+    box-sizing: border-box;
+    transition: 500ms;
+    border-bottom: 2px solid transparent;
     @media (hover: hover) {
         &:hover {
-            text-decoration: underline;
+            border-color: inherit;
         }
     }
 

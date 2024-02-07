@@ -4,10 +4,13 @@
     text-decoration: none;
     @include v.P-normal;
     color: v.$color-black;
+    box-sizing: border-box;
+    transition: 500ms;
+    border-bottom: 2px solid transparent;
+    display: flex;
     @media (hover: hover) {
         &:hover {
-            text-decoration: underline;
-            text-underline-offset: 5px;
+            border-color: inherit;
         }
     }
 

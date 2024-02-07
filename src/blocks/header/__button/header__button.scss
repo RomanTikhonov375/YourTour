@@ -5,7 +5,8 @@
     @include v.P-small;
     border-radius: 10px;
     margin-bottom: 116px;
-    padding: 5px 18px 5px 18px;
+    padding: 5px 20px 5px 20px;
+    border: 0;
     cursor: pointer;
     &:hover {
         background-color: v.$color-orange-200;

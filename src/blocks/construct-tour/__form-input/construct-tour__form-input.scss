@@ -8,9 +8,10 @@
     border-radius: 10px;
     border: 1px solid v.$color-biege-200;
     background: v.$color-biege-100;
+    transition: background-color 0.3s ease-in;
     @media (hover: hover) {
         &:hover {
-            background: v.$color-biege-200;
+            background-color: v.$color-biege-200;
         }
     }
     &::placeholder {

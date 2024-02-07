@@ -3,6 +3,8 @@
 .construct-tour__form-submit {
     background-color: v.$color-green-400;
     color: v.$color-white;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
     &:hover {
         background-color: v.$color-green-300;
     }

@@ -4,6 +4,10 @@
     color: v.$color-black;
     text-decoration: none;
     @include v.P-big;
+    box-sizing: border-box;
+    transition: 500ms;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
     &:active {
         color: v.$color-orange-200;
         text-decoration: underline;
@@ -17,8 +21,7 @@
         transition: color 0.3s; 
     }
     &:hover {
-        text-decoration: underline;
-        text-underline-offset: 5px;
+        border-color: inherit;
     }
 }
 

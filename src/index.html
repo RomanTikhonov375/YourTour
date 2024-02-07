@@ -15,102 +15,114 @@
     <header class="header">
         <div class="header__image">
             <div class="header__wrapper">
-                <img src="<%=require('./images/header-logo.svg')%>" alt="логотип" class="header__logo">
+                <a href="#"><img src="<%=require('./images/header-logo.svg')%>" alt="логотип" class="header__logo"></a>
                 <nav class="header__navigation">
-                    <a href="#" class="header__link">Туры</a>
-                    <a href="#" class="header__link">Создать тур</a>
-                    <a href="#" class="header__link">Отзывы</a>
-                    <a href="#" class="header__link">Истории</a>
+                    <a href="#change-tour" class="header__link">Туры</a>
+                    <a href="#construct-tour" class="header__link">Создать тур</a>
+                    <a href="#user-reviews" class="header__link">Отзывы</a>
+                    <a href="#history-tour" class="header__link">Истории</a>
                 </nav>
-                <p class="header__contact">+7 999 999 99 99</p>
+                <a href="tel:+7 999 999 99 99" class="header__contact">+7 999 999 99 99</a>
             </div>
             <h1 class="header__title">Идеальные путешествия существуют</h1>
             <h2 class="header__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </h2>
-            <button class="header__button">Начать тур</button>
+            <button class="header__button">Найти тур</button>
         </div>
     </header>
     <main class="main-page">
-        <section class="change-tour">
+        <section class="change-tour" id="change-tour">
             <h2 class="section-title">Выбери свой тур</h2>
             <nav class="change-tour__navigation">
-                <a href="#" class="change-tour__link">Популярные</a>
-                <a href="#" class="change-tour__link">Авторские</a>
-                <a href="#" class="change-tour__link">Походы</a>
-                <a href="#" class="change-tour__link">Сплавы</a>
-                <a href="#" class="change-tour__link">Велопрогулки</a>
+                <a class="change-tour__link">Популярные</a>
+                <a class="change-tour__link">Авторские</a>
+                <a class="change-tour__link">Походы</a>
+                <a class="change-tour__link">Сплавы</a>
+                <a class="change-tour__link">Велопрогулки</a>
             </nav>
             <ul class="change-tour__list">
                 <li class="change-tour__card">
-                    <img src="<%=require('./images/card-tour-photo-1.jpg')%>" alt="Путешествие в горы" class="change-tour__card-image">
+                    <img src="<%=require('./images/card-tour-photo-1.jpg')%>" alt="Путешествие в горы"
+                        class="change-tour__card-image">
                     <div class="change-tour__card-wrapper">
                         <div class="change-tour__card-header">
                             <p class="change-tour__card-title">Путешествие в&nbsp;горы</p>
                             <p class="change-tour__card-price">от 80 000 руб</p>
                         </div>
-                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>"
+                                alt="стрелка" class="card-moreinfo-button__icon"></button>
                     </div>
 
 
                 </li>
                 <li class="change-tour__card">
-                    <img src="<%=require('./images/card-tour-photo-2.jpg')%>" alt="Путешествие в горы" class="change-tour__card-image">
+                    <img src="<%=require('./images/card-tour-photo-2.jpg')%>" alt="Путешествие в горы"
+                        class="change-tour__card-image">
                     <div class="change-tour__card-wrapper">
                         <div class="change-tour__card-header">
                             <p class="change-tour__card-title">Путешествие в&nbsp;горы</p>
                             <p class="change-tour__card-price">от 80 000 руб</p>
                         </div>
-                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>"
+                                alt="стрелка" class="card-moreinfo-button__icon"></button>
                     </div>
 
                 </li>
                 <li class="change-tour__card">
-                    <img src="<%=require('./images/card-tour-photo-3.jpg')%>" alt="Путешествие в горы" class="change-tour__card-image">
+                    <img src="<%=require('./images/card-tour-photo-3.jpg')%>" alt="Путешествие в горы"
+                        class="change-tour__card-image">
                     <div class="change-tour__card-wrapper">
                         <div class="change-tour__card-header">
                             <p class="change-tour__card-title">Путешествие в&nbsp;горы</p>
                             <p class="change-tour__card-price">от 80 000 руб</p>
                         </div>
-                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>"
+                                alt="стрелка" class="card-moreinfo-button__icon"></button>
                     </div>
 
                 </li>
                 <li class="change-tour__card">
-                    <img src="<%=require('./images/card-tour-photo-4.jpg')%>" alt="Путешествие в горы" class="change-tour__card-image">
+                    <img src="<%=require('./images/card-tour-photo-4.jpg')%>" alt="Путешествие в горы"
+                        class="change-tour__card-image">
                     <div class="change-tour__card-wrapper">
                         <div class="change-tour__card-header">
                             <p class="change-tour__card-title">Путешествие в&nbsp;горы</p>
                             <p class="change-tour__card-price">от 80 000 руб</p>
                         </div>
-                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>"
+                                alt="стрелка" class="card-moreinfo-button__icon"></button>
                     </div>
 
                 </li>
                 <li class="change-tour__card">
-                    <img src="<%=require('./images/card-tour-photo-5.jpg')%>" alt="Путешествие в горы" class="change-tour__card-image">
+                    <img src="<%=require('./images/card-tour-photo-5.jpg')%>" alt="Путешествие в горы"
+                        class="change-tour__card-image">
                     <div class="change-tour__card-wrapper">
                         <div class="change-tour__card-header">
                             <p class="change-tour__card-title">Путешествие в&nbsp;горы</p>
                             <p class="change-tour__card-price">от 80 000 руб</p>
                         </div>
-                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>"
+                                alt="стрелка" class="card-moreinfo-button__icon"></button>
                     </div>
 
                 </li>
                 <li class="change-tour__card">
-                    <img src="<%=require('./images/card-tour-photo-6.jpg')%>" alt="Путешествие в горы" class="change-tour__card-image">
+                    <img src="<%=require('./images/card-tour-photo-6.jpg')%>" alt="Путешествие в горы"
+                        class="change-tour__card-image">
                     <div class="change-tour__card-wrapper">
                         <div class="change-tour__card-header">
                             <p class="change-tour__card-title">Путешествие в&nbsp;горы</p>
                             <p class="change-tour__card-price">от 80 000 руб</p>
                         </div>
-                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                        <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>"
+                                alt="стрелка" class="card-moreinfo-button__icon"></button>
                     </div>
 
                 </li>
             </ul>
         </section>
-        <section class="construct-tour">
+        <section class="construct-tour" id="construct-tour">
             <h2 class="section-title">Собери свой тур</h2>
             <p class="section-title-cation">Идейные соображения высшего порядка,а также рамки и место обучения кадров
             </p>
@@ -124,11 +136,12 @@
                     <div class="construct-tour__form-input-wrapper">
                         <label for="form-input-direction" class="construct-tour__form-label">Направление</label>
                         <select required name="" id="form-input-direction" class="construct-tour__form-input">
-                            <option value="" disabled selected hidden>Куда хотите ехать</option>
+                            <option value="" disabled selected hidden>Куда хотите ехать </option>
                             <option value="Горы">Горы</option>
                             <option value="Море">Море</option>
                             <option value="Приключения">Приключения</option>
                         </select>
+                        <div class="construct-tour__arrow"></div>
                     </div>
                 </fieldset>
                 <fieldset class="construct-tour__form-part">
@@ -155,9 +168,9 @@
                             placeholder="ДД.ММ.ГГГГ" onfocus="(this.type='date')" required>
                     </div>
                 </fieldset>
-                <div class="construct-tour__form-input-wrapper">
+                <div class="construct-tour__form-input-wrapper construct-tour__textarea" >
                     <label for="form-input-comment" class="construct-tour__form-label">Комментарий</label>
-                    <textarea class="construct-tour__form-input" id="form-input-comment" rows="5"></textarea>
+                    <textarea class="construct-tour__form-input" id="form-input-comment" rows="4"></textarea>
                 </div>
                 <div class="construct-tour__form-input-wrapper">
                     <p class="construct-tour__form-label">Вам есть 18 лет?</p>
@@ -193,7 +206,7 @@
 
             </form>
         </section>
-        <section class="user-reviews">
+        <section class="user-reviews" id="user-reviews">
             <h2 class="section-title">Отзывы наших<br> путешественников</h2>
             <p class="section-title-cation">Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </p>
@@ -239,7 +252,8 @@
             <ul class="photo-galary__card-list">
                 <div class="photo-galary__card-row-wrapper">
                     <li class="photo-galary__card">
-                        <img src="<%=require('./images/travel-photo-1.jpg')%>" alt="Путешествие в горы" class="photo-galary__card-image">
+                        <img src="<%=require('./images/travel-photo-1.jpg')%>" alt="Путешествие в горы"
+                            class="photo-galary__card-image">
                     </li>
                     <li class="card-display1024-none photo-galary__card ">
                         <img src="<%=require('./images/travel-photo-2.jpg')%>" alt="Путешествие в горы"
@@ -296,13 +310,14 @@
 
             </ul>
         </section>
-        <section class=" history-tour">
+        <section class=" history-tour" id="history-tour">
             <h2 class="section-title">Истории путешествий</h2>
             <p class="section-title-cation">Идейные соображения высшего порядка, а также рамки и место
                 обучения кадров</p>
             <ul class="history-tour__list">
                 <li class="history-tour__card">
-                    <img src="<%=require('./images/story-photo-1.jpg')%>" alt="Путешествие в горы" class="history-tour__card-image">
+                    <img src="<%=require('./images/story-photo-1.jpg')%>" alt="Путешествие в горы"
+                        class="history-tour__card-image">
                     <div class="history-tour__card-wrapper">
                         <div class="history-tour__card-text-wrapper">
                             <h3 class="history-tour__card-header">Автостопом в Стамбул</h3>
@@ -319,17 +334,20 @@
                             </ul>
                         </div>
                         <div class="history-tour__card-footer">
-                            <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                            <button class="card-moreinfo-button">Подробнее <img
+                                    src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка"
+                                    class="card-moreinfo-button__icon"></button>
                             <nav class="card-display360-none history-tour__card-links">
-                <a href="#" class="history-tour__card-link">instagram</a>
-                <a href="#" class="history-tour__card-link">facebook</a>
-                <a href="#" class="history-tour__card-link">YouTube</a>
-                </nav>
-                </div>
-                </div>
+                                <a href="#" class="history-tour__card-link">instagram</a>
+                                <a href="#" class="history-tour__card-link">facebook</a>
+                                <a href="#" class="history-tour__card-link">YouTube</a>
+                            </nav>
+                        </div>
+                    </div>
                 </li>
                 <li class="history-tour__card">
-                    <img src="<%=require('./images/story-photo-2.jpg')%>" alt="Путешествие в горы" class="history-tour__card-image">
+                    <img src="<%=require('./images/story-photo-2.jpg')%>" alt="Путешествие в горы"
+                        class="history-tour__card-image">
                     <div class="history-tour__card-wrapper">
                         <div class="history-tour__card-text-wrapper">
                             <h3 class="history-tour__card-header">Автостопом в Стамбул</h3>
@@ -341,17 +359,20 @@
                         </div>
 
                         <div class="history-tour__card-footer">
-                            <button class="card-moreinfo-button">Подробнее <img src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка" class="card-moreinfo-button__icon"></button>
+                            <button class="card-moreinfo-button">Подробнее <img
+                                    src="<%=require('./images/arrow-bt.svg')%>" alt="стрелка"
+                                    class="card-moreinfo-button__icon"></button>
                             <nav class="card-display360-none history-tour__card-links">
-                <a href="#" class="history-tour__card-link">instagram</a>
-                <a href="#" class="history-tour__card-link">ВКонтакте</a>
-                </nav>
-                </div>
-                </div>
+                                <a href="#" class="history-tour__card-link">instagram</a>
+                                <a href="#" class="history-tour__card-link">ВКонтакте</a>
+                            </nav>
+                        </div>
+                    </div>
 
                 </li>
                 <li class="history-tour__card">
-                    <img src="<%=require('./images/story-photo-3.jpg')%>" alt="Путешествие в горы" class="history-tour__card-image">
+                    <img src="<%=require('./images/story-photo-3.jpg')%>" alt="Путешествие в горы"
+                        class="history-tour__card-image">
                     <div class="history-tour__card-wrapper">
                         <div class="history-tour__card-text-wrapper">
                             <h3 class="history-tour__card-header">Автостопом в Стамбул</h3>
@@ -365,23 +386,24 @@
                         <div class="history-tour__card-footer">
                             <button class="card-moreinfo-button">Подробнее &#8594;</button>
                             <nav class="card-display360-none history-tour__card-links ">
-                <a href="#" class="history-tour__card-link">instagram</a>
-                <a href="#" class="history-tour__card-link">facebook</a>
-                <a href="#" class="history-tour__card-link">ВКонтакте</a>
-                </nav>
-                </div>
-                </div>
+                                <a href="#" class="history-tour__card-link">instagram</a>
+                                <a href="#" class="history-tour__card-link">facebook</a>
+                                <a href="#" class="history-tour__card-link">ВКонтакте</a>
+                            </nav>
+                        </div>
+                    </div>
 
                 </li>
             </ul>
         </section>
         <section class="call-to-action">
             <div class="call-to-action__wrapper">
-                <img src="<%=require('./images/footer-photo.jpg')%>" alt="Путешествие в горы" class="call-to-action__image">
+                <img src="<%=require('./images/footer-photo.jpg')%>" alt="Путешествие в горы"
+                    class="call-to-action__image">
                 <div class="call-to-action__text-wrapper">
                     <h3 class="call-to-action__header">Пора в путешествие вместе с нами!</h3>
-                    <p class="call-to-action__caption">Напиши на почту и узнай подробности на&nbsp;<a href=""
-                            class="global-link">yourtour@gmail.com</a></p>
+                    <p class="call-to-action__caption">Напиши на почту и узнай подробности на&nbsp;<a
+                            href="mailto:yourtour@gmail.com" class="global-link">yourtour@gmail.com</a></p>
                 </div>
             </div>
         </section>
@@ -392,16 +414,19 @@
             <nav class="footer__navigation">
                 <ul class="footer__links">
                     <li class="footer__item">
-                        <img class="footer__link-icon" src="<%=require('./images/icon-inst.svg')%>" alt="instagram">
-                        <a href="#" class="footer__link">instagram</a>
+
+                        <a href="#" class="footer__link"> <img class="footer__link-icon"
+                                src="<%=require('./images/icon-inst.svg')%>" alt="instagram">instagram</a>
                     </li>
                     <li class="footer__item">
-                        <img class="footer__link-icon" src="<%=require('./images/icon-fb.svg')%>" alt="facebook">
-                        <a href="#" class="footer__link">facebook</a>
+
+                        <a href="#" class="footer__link"><img class="footer__link-icon"
+                                src="<%=require('./images/icon-fb.svg')%>" alt="facebook">facebook</a>
                     </li>
                     <li class="footer__item">
-                        <img class="footer__link-icon" src="<%=require('./images/icon-vk.svg')%>" alt="vkontakte">
-                        <a href="#" class="footer__link">vkontakte</a>
+
+                        <a href="#" class="footer__link"> <img class="footer__link-icon"
+                                src="<%=require('./images/icon-vk.svg')%>" alt="vkontakte">vkontakte</a>
                     </li>
                 </ul>
             </nav>

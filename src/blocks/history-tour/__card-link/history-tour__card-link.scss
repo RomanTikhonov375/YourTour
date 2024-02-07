@@ -5,9 +5,12 @@
     color: v.$color-white;
     @include v.P-normal;
     cursor: pointer;
+    box-sizing: border-box;
+    transition: 500ms;
+    border-bottom: 2px solid transparent;
     @media (hover: hover) {
         &:hover {
-            text-decoration: underline;
+            border-color: inherit;
         }
     }
     &:active {

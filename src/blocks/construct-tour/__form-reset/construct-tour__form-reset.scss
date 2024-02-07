@@ -3,6 +3,8 @@
 .construct-tour__form-reset {
     background-color: v.$color-green-100;
     color: v.$color-green-400;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
     @media (hover: hover) {
         &:hover {
             background-color: v.$color-gray-100;
