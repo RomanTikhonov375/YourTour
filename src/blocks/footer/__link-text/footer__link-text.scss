@@ -1,20 +1,13 @@
 @use '../../variables' as v;
 
-
-.header__link {
-    text-decoration: none;
-    color: inherit;
+.footer__link-text {
     @include v.P-normal;
-    box-sizing: border-box;
+    color: v.$color-black;
     transition: 500ms;
-    border-bottom: 1.8px solid transparent;
-
-    
+    border-bottom: 1px solid transparent;
     @media (hover: hover) {
         &:hover {
             border-color: inherit;
-            
         }
     }
-
 }

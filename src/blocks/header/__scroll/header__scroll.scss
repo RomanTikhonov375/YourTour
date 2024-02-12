@@ -9,6 +9,7 @@
     backdrop-filter: blur(10px);
     z-index: 4;
     color: v.$color-black;
+    transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 1560px) {

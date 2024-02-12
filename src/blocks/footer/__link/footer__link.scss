@@ -2,18 +2,9 @@
 
 .footer__link {
     text-decoration: none;
-    @include v.P-normal;
-    color: v.$color-black;
-    box-sizing: border-box;
-    transition: 500ms;
-    border-bottom: 2px solid transparent;
-    display: flex;
-    @media (hover: hover) {
-        &:hover {
-            border-color: inherit;
-        }
-    }
 
+    box-sizing: border-box;
+    display: flex;
 }
 
 @media screen and (max-width: 500px) {

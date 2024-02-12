@@ -4,10 +4,12 @@ import logo from './images/header-logo.svg';
 
 const header = document.querySelector('.header__wrapper');
 const headerLogo = document.querySelector('.header__logo');
+const page = document.querySelector('.page');
 
 function onCrollHandler() {
     let y = window.scrollY;
     if (y > 450) {
+        page.style.paddingTop = '93.25px';
         header.style.position = 'fixed';
         headerLogo.src = logoBlack;
         header.classList.add('header__scroll')
@@ -15,6 +17,7 @@ function onCrollHandler() {
         header.classList.remove('header__scroll')
         header.style.position = 'relative';
         headerLogo.src = logo;
+        page.style.paddingTop = '0';
     }
 }
 
