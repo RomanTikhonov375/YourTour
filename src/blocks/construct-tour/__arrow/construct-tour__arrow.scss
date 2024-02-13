@@ -10,3 +10,9 @@
     right: 24px;
     pointer-events: none;
 }
+
+@media screen and (max-width: 500px) {
+    .construct-tour__arrow {
+        top: 40px;
+    }
+}

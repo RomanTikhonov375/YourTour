@@ -7,7 +7,7 @@
     cursor: pointer;
     box-sizing: border-box;
     transition: 500ms;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     @media (hover: hover) {
         &:hover {
             border-color: inherit;
