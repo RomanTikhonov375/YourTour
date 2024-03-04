@@ -1,5 +1,84 @@
+@use '../variables' as v;
+
 .call-to-action {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .call-to-action__caption {
+        margin: 0;
+        padding: 0;
+
+        @include v.P-normal;
+        color: v.$color-gray-300;
+    }
+
+    .call-to-action__header {
+        margin: 0;
+        padding: 0;
+
+        @include v.H3;
+    }
+
+    .call-to-action__image {
+        z-index: 0;
+        display: block;
+        width: 370px;
+        height: 370px;
+        flex-shrink: 0;
+
+        border-radius: 50px;
+        object-fit: cover;
+
+    }
+
+    .call-to-action__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        width: 371px;
+    }
+
+    .call-to-action__wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .call-to-action__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        .call-to-action__caption {
+            @include v.Mobile-P-normal;
+            text-align: center;
+        }
+    
+        .call-to-action__header {
+            @include v.Mobile-H3;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+    
+        .call-to-action__image {
+            width: 130px;
+            height: 133px;
+    
+            border-radius: 20px;
+        }
+    
+        .call-to-action__text-wrapper {
+            width: 291px;
+            height: auto;
+        }
+    }
+
 }
+
+
+
+
