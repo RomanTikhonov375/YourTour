@@ -9,7 +9,7 @@ const headerTitle = document.querySelector('.header__title');
 function onCrollHandler() {
     let y = window.scrollY;
     if (y > 450) {
-        headerTitle.style.paddingTop = '33.78px';
+        headerTitle.style.paddingTop = '93.54px';
         header.style.position = 'fixed';
         headerLogo.src = logoBlack;
         header.classList.add('header__scroll')
