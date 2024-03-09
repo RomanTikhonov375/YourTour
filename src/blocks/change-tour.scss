@@ -63,96 +63,6 @@
         }
     }
 
-    &__card-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: calc(100% - 100px);
-        width: 100%;
-        height: 100%;
-        padding: 50px 50px 35px 50px;
-        box-sizing: border-box;
-
-        overflow: hidden;
-
-    }
-
-    &__card-title {
-        @include v.paddingAndMargin(0,0);
-
-        @include v.H3;
-
-        color: v.$color-white;
-    }
-
-    &__card-price {
-        margin: 16px 0 0 0;
-
-        @include v.P-small;
-
-        color: v.$color-white;
-
-
-    }
-
-    &__card-image {
-        position: relative;
-        z-index: 0;
-
-        display: block;
-        flex-shrink: 0;
-        height: 100%;
-
-        object-fit: cover;
-
-        transition: transform 300ms ease;
-    }
-
-    &__card {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-
-        border-radius: 50px;
-
-        overflow: hidden;
-        cursor: pointer;
-
-        @media (hover: hover) {
-            &:hover .card-moreinfo-button {
-                background-color: v.$color-green-400 ;
-                border-radius: 50px;
-
-            }
-
-            &:hover .change-tour__card-image {
-                transform: scale(1.2);
-            }
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            z-index: 1;
-
-            background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-            border-radius: 50px;
-
-            overflow: hidden;
-        }
-    }
-
     
 @media screen and (max-width: 1850px) {
     .change-tour {
@@ -188,26 +98,6 @@
 
         &__link {
             @include v.Mobile-P-big;
-        }
-
-        &__card-wrapper {
-            padding: 25px 25px 20px 25px;
-        }
-
-        &__card-title {
-            @include v.Mobile-H3;
-        }
-
-        &__card-price {
-            @include v.Mobile-P-small;
-        }
-
-        &__card {
-            border-radius: 20px;
-
-            &::after {
-                border-radius: 20px;
-            }
         }
     }
 
