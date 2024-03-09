@@ -10,19 +10,18 @@
 
     &__list {
         display: grid;
-        grid-gap: 30px;
+        grid-gap: v.$gap-30;
         grid-template-columns: repeat(auto-fit, 370px);
         grid-auto-rows: 531px;
         max-width: 100%;
-        padding: 0;
-        margin: 0;
+        @include v.paddingAndMargin(0,0);
 
         list-style: none;
     }
 
     &__navigation {
         display: flex;
-        gap: 30px;
+        gap: v.$gap-30;
         margin-bottom: 100px;
         margin-top: 35px;
     }
@@ -84,7 +83,7 @@
     }
 
     &__card-title {
-        margin: 0;
+        @include v.paddingAndMargin(0,0);
 
         @include v.H3;
 
@@ -184,7 +183,7 @@
             flex-wrap: wrap;
             justify-content: center;
             margin: 30px 21px 50px 21px;
-            gap: 10px;
+            gap: v.$gap-10;
         }
 
         &__link {

@@ -146,7 +146,7 @@
 
     @include v.for-size(desktop) {
         &__navigation {
-            gap: 30px
+            gap: v.$gap-30;
         }
         &__wrapper {
             width: 88%;

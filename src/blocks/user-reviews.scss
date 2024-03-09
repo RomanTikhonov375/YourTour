@@ -9,10 +9,10 @@
     &__list {
         width: 1170px;
         display: flex;
-        gap: 30px;
-        padding: 0;
+        gap: v.$gap-30;
+        @include v.paddingAndMargin(0,0);
         list-style: none;
-        margin: 0;
+       
        
     }
 
@@ -25,12 +25,12 @@
     &__card-user-tour {
         color: v.$color-gray-300;
         @include v.P-small;
-        margin: 0;
+        @include v.paddingAndMargin(0,0);
     }
 
     &__card-user-name {
         @include v.H3;
-        margin: 0;
+        @include v.paddingAndMargin(0,0);
     }
 
     &__card-user-avatar {
@@ -45,7 +45,7 @@
 
     &__card-text {
         @include v.P-big;
-        margin: 0;
+        @include v.paddingAndMargin(0,0);
     }
     
     &__card {
@@ -98,23 +98,4 @@
         }
     }
     
-}
-
-
-
-
-@media screen and (max-width: 500px) {
-
-}
-
-@media screen and (max-width: 850px) {
-
-}
-
-@media screen and (max-width: 500px) {
-
-}
-
-@media screen and (max-width: 500px) {
-
 }

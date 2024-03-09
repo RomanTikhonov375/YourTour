@@ -29,8 +29,7 @@
     &__links {
         display: flex;
         gap: 25px;
-        margin: 0;
-        padding: 0;
+        @include v.paddingAndMargin(0,0);
 
         list-style: none;
     }
@@ -66,12 +65,11 @@
 
     &__item {
         display: flex;
-        gap: 10px;
+        gap: v.$gap-10;
     }
 
     &__caption {
-        margin: 0;
-        padding: 0;
+        @include v.paddingAndMargin(0,0);
 
         @include v.P-normal;
 

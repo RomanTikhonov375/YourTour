@@ -106,6 +106,16 @@ $color-green-100: #E0F0E5;
     line-height: 142%;
 }
 
+// indentation
+@mixin paddingAndMargin($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+// Gaps
+$gap-10: 10px;
+$gap-30: 30px;
+
 // Screens sizes
 $screen-mobile: 767px;
 $screen-tablet: 1024px;
@@ -122,3 +132,4 @@ $screen-desktop: 1280px;
       @media (max-width: $screen-desktop) { @content; }
     } 
   }
+  
