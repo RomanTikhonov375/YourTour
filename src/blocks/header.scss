@@ -1,0 +1,231 @@
+@use './variables' as v;
+
+.header {
+    width: 100%;
+    height: 830px;
+    margin-bottom: 135px;
+    box-sizing: border-box;
+
+    &__wrapper {
+        display: flex;
+        width: 71%;
+        justify-content: space-around;
+        padding: 30px 0 30px;
+        align-items: center;
+        box-sizing: border-box;
+
+        color: v.$color-white;
+    }
+
+    &__title {
+        width: 768px;
+        height: 315px;
+        margin-top: 120px;
+        margin-bottom: 50px;
+
+        @include v.H1;
+        text-align: center;
+
+        color: v.$color-white;
+    }
+
+    &__subtitle {
+        width: 562px;
+        margin: 0 0 46px 0;
+
+        @include v.P-normal;
+        text-align: center;
+
+        color: v.$color-white;
+    }
+
+    &__scroll {
+        top: 0;
+        z-index: 4;
+
+        width: 100%;
+        padding-left: 19.5%;
+        padding-right: 19.5%;
+     
+        color: v.$color-black;
+        background-color: rgba(241, 243, 242, 0.8);
+        backdrop-filter: blur(10px);
+  
+        transition: background-color 0.5s ease;
+    }
+
+    &__navigation {
+        position: relative;
+        z-index: 3;
+
+        display: flex;
+        gap: 50px;
+
+        color: inherit;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 3;
+
+        width: 181px;
+        height: 30px;
+
+        cursor: pointer;
+    }
+
+    &__link {
+        box-sizing: border-box;
+
+        @include v.P-normal;
+        text-decoration: none;
+
+        color: inherit;
+        border-bottom: 1px solid transparent;
+   
+        transition: 500ms;
+        @media (hover: hover) {
+            &:hover {
+                border-color: inherit;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 743px;
+        width: 100%;
+        box-sizing: border-box;
+
+        background-image: url('./images/header-img-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;     
+    }
+
+    &__contact {
+        position: relative;
+        z-index: 3;
+
+        margin: 0;
+
+        @include v.P-normal;
+        text-decoration: none;
+
+        color: inherit;
+ 
+        cursor: pointer;
+    }
+
+    &__button {
+        margin-bottom: 116px;
+        padding: 5px 20px 5px 20px;
+
+        @include v.P-small;
+
+        background-color: v.$color-white;
+        border-radius: 10px;
+        border: 0;
+
+        cursor: pointer;
+        &:hover {
+            background-color: v.$color-orange-200;
+
+            transition: background-color 1s;
+        }
+        &:active {
+            color: v.$color-black;
+            background-color: v.$color-orange-100;
+
+            transition: background-color 1s;
+        }
+    }
+
+    @include v.for-size(desktop) {
+        &__navigation {
+            gap: 30px
+        }
+        &__wrapper {
+            width: 88%;
+            justify-content: space-between;
+        }
+        &__scroll {
+            width: 100%;
+            padding-left: 57px;
+            padding-right: 57px;
+        }
+    }
+
+    @include v.for-size(tablet) {
+        &__wrapper {
+            width: 100%;
+            padding: 30px 20px 30px 20px;
+        }
+        &__title {
+            width: 100%;
+            @include v.H2;
+        }
+        &__navigation {
+            display: none;
+        }
+
+    }
+
+    @include v.for-size(mobile) {
+        & {
+            height: auto;
+            margin-bottom: 75px;
+        }
+        &__title {
+            height: auto;
+            margin-top: 52px;
+            margin-bottom: 40px;
+            @include v.Mobile-H1;
+        }
+        &__subtitle {
+            @include v.Mobile-P-normal;
+            width: 300px;
+            margin-bottom: 40px;
+        }
+        &__scroll {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__logo {
+            height: 22px;
+            width: 133px;
+        }
+        &__image {
+            min-height: 400px;
+        }
+        &__contact {
+            @include v.Mobile-P-normal;
+            height: 22px;
+            width: 124px;
+        }
+        &__button {
+            @include v.Mobile-P-small;
+            border-width: 1px;
+            padding: 5px 20px 5px 20px;
+            margin-bottom: 58px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+@use './variables' as v;
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__caption {
+        margin: 0;
+        padding: 0;
+
+        @include v.P-normal;
+        color: v.$color-gray-300;
+    }
+
+    &__header {
+        margin: 0;
+        padding: 0;
+
+        @include v.H3;
+    }
+
+    &__image {
+        z-index: 0;
+        display: block;
+        width: 370px;
+        height: 370px;
+        flex-shrink: 0;
+
+        border-radius: 50px;
+        object-fit: cover;
+
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        width: 371px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+
+
+    @include v.for-size(tablet) {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__caption {
+            @include v.Mobile-P-normal;
+            text-align: center;
+        }
+    
+        &__header {
+            @include v.Mobile-H3;
+            text-align: center;
+        }
+    }
+
+    @include v.for-size(mobile) {
+        &__image {
+            width: 130px;
+            height: 133px;
+    
+            border-radius: 20px;
+        }
+    
+        &__text-wrapper {
+            width: 291px;
+            height: auto;
+        }
+    }
+
+}
+
+
+
+

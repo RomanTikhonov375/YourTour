@@ -1,0 +1,19 @@
+@use './variables' as v;
+
+.section-title-cation {
+    width: 418px;
+    color: v.$color-gray-300;
+    @include v.P-normal;
+    text-align: center;
+    margin: 30px auto 96px;
+
+}
+
+@include v.for-size(mobile) {
+    .section-title-cation {
+        width: 100%;
+        margin: 20px auto 40px;
+        
+        @include v.Mobile-P-normal;
+    }
+}

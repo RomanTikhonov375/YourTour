@@ -1,0 +1,382 @@
+@use './variables' as v;
+
+.construct-tour {
+    width: 90%;
+    max-width: 1170px;
+    margin: auto;
+
+    &__textarea {
+        height: 160px;
+    }
+
+    &__form-submit {
+        background-color: v.$color-green-400;
+        color: v.$color-white;
+
+        cursor: pointer;
+
+        transition: background-color 0.3s ease-in;
+
+        &:hover {
+            background-color: v.$color-green-300;
+        }
+
+        &:active {
+            background-color: v.$color-green-200;
+        }
+    }
+
+    &__form-select {
+        cursor: pointer;
+    }
+
+    &__form-reset {
+        background-color: v.$color-green-100;
+        color: v.$color-green-400;
+
+        cursor: pointer;
+
+        transition: background-color 0.3s ease-in;
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: v.$color-gray-100;
+            }
+
+            &:active {
+                background-color: v.$color-gray-200;
+            }
+        }
+    }
+
+    &__form-radio-wrapper {
+        display: flex;
+        gap: 31px;
+    }
+
+    &__form-radio-item {
+        display: flex;
+        gap: 11px;
+    }
+
+    &__form-part {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-shrink: 0;
+
+        border: 0;
+    }
+
+    &__form-label-radio {
+        position: relative;
+
+        display: inline-block;
+        padding-left: 37px;
+        margin-right: 0;
+
+        cursor: pointer;
+        user-select: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+
+            background: url('./images/radiobutton.svg') 0 0 no-repeat;
+        }
+    }
+
+    input[type=radio]:checked+&__form-label-radio:before {
+        background: url('./images/radiobutton-checked.svg') 0 0 no-repeat;
+    }
+
+    &__form-label-checkbox {
+        position: relative;
+
+        display: inline-block;
+        padding-left: 37px;
+        margin-right: 0;
+
+        cursor: pointer;
+        user-select: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+
+            background: url('./images/checkboxbutton.svg') 0 0 no-repeat;
+        }
+    }
+
+    input[type=checkbox]:checked+&__form-label-checkbox:before {
+        background: url('./images/checkbox-checked.svg') 0 0 no-repeat;
+    }
+
+    &__form-label {
+        margin: 0;
+
+        @include v.P-normal;
+
+        color: v.$color-black;
+    }
+
+    &__form-input-wrapper {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    &__form-input {
+        -webkit-appearance: none;
+
+        padding: 20px;
+        margin: 0;
+
+        @include v.P-normal;
+
+        border-radius: 10px;
+        border: 1px solid v.$color-biege-200;
+        background: v.$color-biege-100;
+
+        transition: background-color 0.3s ease-in;
+
+        resize: none;
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: v.$color-biege-200;
+            }
+        }
+
+        &::placeholder {
+            color: v.$color-gray-300;
+        }
+
+        &:focus {
+            border: 1px solid v.$color-gray-300;
+        }
+
+        &:focus-visible {
+            outline: 0;
+        }
+
+    }
+
+    select:invalid {
+        color: v.$color-gray-300;
+    }
+
+    option {
+        color: v.$color-black;
+    }
+
+    &__form-checkbox-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+    }
+
+    &__form-checkbox-text {
+        margin: 0;
+
+        @include v.P-small;
+
+        color: v.$color-gray-300;
+    }
+
+    &__form-button-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__form-button {
+        @include v.P-normal;
+
+        width: 235px;
+        padding: 15px 30px;
+
+        border-radius: 10px;
+        border: 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        align-items: flex-start;
+        padding: 70px;
+
+        background-color: v.$color-white;
+        border-radius: 50px;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 60px;
+        right: 24px;
+
+        display: block;
+        width: 13.3px;
+        height: 13.3px;
+
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+
+        transform: rotate(45deg);
+
+        pointer-events: none;
+    }
+
+
+    @include v.for-size(desktop) {
+
+        & {
+            width: 90%;
+        }
+
+        &__form {
+            padding: 60px;
+        }
+
+    }
+
+    @include v.for-size(tablet) {
+        &__form-button {
+            width: 134px;
+            padding: 10px;
+            @include v.Mobile-P-normal;
+        }
+
+        &__form-part {
+            flex-direction: column;
+        }
+
+    }
+
+    @include v.for-size(mobile) {
+        &__arrow {
+            top: 40px;
+        }
+
+        &__form {
+            gap: 30px;
+            padding: 20px 20px 40px 20px;
+
+            border-radius: 30px;
+        }
+
+        &__form-button-wrapper {
+            width: 100%;
+            gap: 0px;
+            justify-content: space-between;
+        }
+
+        &__form-checkbox-text {
+            @include v.Mobile-P-normal;
+        }
+
+        &__form-checkbox-wrapper {
+            width: 95%;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        &__form-input {
+            @include v.Mobile-P-normal;
+
+            padding: 10px;
+        }
+
+        &__form-label {
+            @include v.Mobile-P-normal;
+        }
+
+        &__form-label-checkbox {
+            padding-left: 30px;
+
+            &::before {
+                top: 0;
+
+                width: 20px;
+                height: 20px;
+
+                background: url('./images/mobile-checkboxbutton.svg') 0 0 no-repeat;
+            }
+        }
+
+        input[type=checkbox]:checked+&__form-label-checkbox:before {
+            background: url('./images/mobile-checkbox-checked.svg') 0 0 no-repeat;
+        }
+
+        &__form-label-radio {
+            padding-left: 30px;
+
+            &::before {
+                width: 20px;
+                height: 20px;
+
+                background: url('./images/mobile-radiobutton.svg') 0 0 no-repeat;
+            }
+        }
+
+        input[type=radio]:checked+&__form-label-radio:before {
+            background: url('./images/mobile-radiobutton-checked.svg') 0 0 no-repeat;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 500px) {}
+
+
+
+@media screen and (max-width: 825px) {}
+
+
+
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
+
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
+
+
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 1190px) {}
+
+@media screen and (max-width: 825px) {}

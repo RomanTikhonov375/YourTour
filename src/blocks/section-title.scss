@@ -1,0 +1,14 @@
+@use './variables' as v;
+
+.section-title {
+    @include v.H2;
+    margin: 0;
+    text-align: center;
+}
+
+@include v.for-size(mobile) {
+    .section-title {
+        @include v.Mobile-H2;
+        
+    }
+}

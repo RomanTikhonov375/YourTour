@@ -1,0 +1,16 @@
+@use './variables' as v;
+
+@include v.for-size(tablet) {
+    .card-display1024-none {
+        display: none;
+    }
+}
+
+@include v.for-size(mobile) {
+    .card-display360-none {
+        display: none;
+    }
+}
+
+
+

@@ -1,0 +1,229 @@
+@use './variables' as v;
+
+
+.change-tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 62%;
+    margin: auto;
+
+    &__list {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, 370px);
+        grid-auto-rows: 531px;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 100px;
+        margin-top: 35px;
+    }
+
+    &__link {
+        box-sizing: border-box;
+
+        @include v.P-big;
+        text-decoration: none;
+
+        color: v.$color-black;
+        border-bottom: 1px solid transparent;
+
+        transition: 500ms;
+
+        cursor: pointer;
+
+
+        &:active {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+
+            color: v.$color-orange-200;
+
+            transition: color 0.3s;
+        }
+
+        &:target {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+
+            color: v.$color-orange-200;
+
+            transition: color 0.3s;
+        }
+
+        &:hover {
+            border-color: inherit;
+        }
+    }
+
+    &__card-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 100px);
+        width: 100%;
+        height: 100%;
+        padding: 50px 50px 35px 50px;
+        box-sizing: border-box;
+
+        overflow: hidden;
+
+    }
+
+    &__card-title {
+        margin: 0;
+
+        @include v.H3;
+
+        color: v.$color-white;
+    }
+
+    &__card-price {
+        margin: 16px 0 0 0;
+
+        @include v.P-small;
+
+        color: v.$color-white;
+
+
+    }
+
+    &__card-image {
+        position: relative;
+        z-index: 0;
+
+        display: block;
+        flex-shrink: 0;
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: transform 300ms ease;
+    }
+
+    &__card {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        border-radius: 50px;
+
+        overflow: hidden;
+        cursor: pointer;
+
+        @media (hover: hover) {
+            &:hover .card-moreinfo-button {
+                background-color: v.$color-green-400 ;
+                border-radius: 50px;
+
+            }
+
+            &:hover .change-tour__card-image {
+                transform: scale(1.2);
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+            border-radius: 50px;
+
+            overflow: hidden;
+        }
+    }
+
+    
+@media screen and (max-width: 1850px) {
+    .change-tour {
+        width: 80%;
+    }
+}
+
+    @include v.for-size(desktop) {
+        & {
+            width: 91%;
+            margin: auto;
+
+        }
+
+        &__list {
+            grid-gap: 18px;
+            grid-template-columns: repeat(auto-fit, 450px);
+        }
+    }
+
+    @include v.for-size(tablet) {
+        &__list {
+            grid-template-columns: repeat(auto-fit, 318px);
+            grid-auto-rows: 318px;
+        }
+
+        &__navigation {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px 21px 50px 21px;
+            gap: 10px;
+        }
+
+        &__link {
+            @include v.Mobile-P-big;
+        }
+
+        &__card-wrapper {
+            padding: 25px 25px 20px 25px;
+        }
+
+        &__card-title {
+            @include v.Mobile-H3;
+        }
+
+        &__card-price {
+            @include v.Mobile-P-small;
+        }
+
+        &__card {
+            border-radius: 20px;
+
+            &::after {
+                border-radius: 20px;
+            }
+        }
+    }
+
+
+    @include v.for-size(mobile) {
+        & {
+            width: 100%;
+        }
+        &__list {
+            grid-template-columns: 318px;
+            grid-auto-rows: 318px;
+        }
+        &__navigation {
+            margin-bottom: 44px;
+        }
+    }
+
+}

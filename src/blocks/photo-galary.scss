@@ -1,0 +1,67 @@
+@use './variables' as v;
+
+.photo-galary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+    margin: auto;
+    &__card-row-wrapper {
+        display: flex;
+        gap: 30px;
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__card-list {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+
+        list-style: none;
+    }
+
+    &__card-image {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    &__card {
+        height: 300px;
+    }
+
+    @include v.for-size(tablet) {
+        &__card-row-wrapper {
+            gap: 20px;
+        }
+    }
+
+    @include v.for-size(mobile) {
+        &  {
+            padding: 0 21px 0 21px;
+        }
+        &__card-row-wrapper {
+            gap: 10px;
+            height: 110px;
+        }
+        &__card-list {
+            gap: 18px;
+            padding-top: 10px;
+        }
+        &__card-image {
+            height: 110px;
+
+            border-radius: 20px;
+        }
+    }
+
+}

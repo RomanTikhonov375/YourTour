@@ -1,0 +1,126 @@
+@use './variables' as v;
+
+.footer {
+    display: flex;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    gap: 214px;
+    margin-top: 135px;
+    box-sizing: border-box;
+
+    background-color: v.$color-biege-200;
+
+    &__wrapper {
+        display: flex;
+        width: 1168px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        box-sizing: border-box;
+
+        padding: 21px;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+
+    &__links {
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__link-text {
+        @include v.P-normal;
+
+        color: v.$color-black;
+        border-bottom: 1px solid transparent;
+
+        transition: 500ms;
+
+        @media (hover: hover) {
+            &:hover {
+                border-color: inherit;
+            }
+        }
+
+    }
+
+    &__link-icon {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+    }
+
+    &__link {
+        display: flex;
+        box-sizing: border-box;
+
+        text-decoration: none;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__caption {
+        margin: 0;
+        padding: 0;
+
+        @include v.P-normal;
+
+        color: v.$color-gray-300;
+    }
+
+    @include v.for-size(desktop) {
+        &__wrapper {
+            width: 918px;
+        }
+    }
+
+    @include v.for-size(tablet) {
+        &__wrapper {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+
+    @include v.for-size(mobile) {
+        & {
+            margin-top: 83px;
+        }
+        &__caption {
+            @include v.Mobile-P-normal;
+            text-align: center;
+        }
+        &__item {
+            gap: 5px;
+        }
+        &__link-text {
+            @include v.Mobile-P-normal;
+            text-align: center;
+        }
+        &__link-icon {
+            width: 22px;
+            height: 22px;
+            margin-right: 5px;
+        }
+        &__links {
+            gap: 15px;
+        }
+
+
+    }
+
+
+
+}
