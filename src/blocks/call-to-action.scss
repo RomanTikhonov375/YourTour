@@ -1,20 +1,14 @@
-@use './variables' as v;
-
 .call-to-action {
     display: flex;
     justify-content: center;
     align-items: center;
 
     &__caption {
-        @include v.paddingAndMargin(0,0);
-
         @include v.P-normal;
         color: v.$color-gray-300;
     }
 
     &__header {
-        @include v.paddingAndMargin(0,0);
-
         @include v.H3;
     }
 

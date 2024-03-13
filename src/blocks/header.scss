@@ -1,10 +1,8 @@
-@use './variables' as v;
-
 .header {
     width: 100%;
     height: 830px;
     margin-bottom: 135px;
-    box-sizing: border-box;
+
 
     &__wrapper {
         display: flex;
@@ -12,7 +10,6 @@
         justify-content: space-around;
         padding: 30px 0 30px;
         align-items: center;
-        box-sizing: border-box;
 
         color: v.$color-white;
     }
@@ -68,14 +65,14 @@
         position: relative;
         z-index: 3;
 
-        width: 181px;
-        height: 30px;
-
         cursor: pointer;
     }
 
+    &__logo-onScroll path {
+        fill: v.$color-black;
+    }
+
     &__link {
-        box-sizing: border-box;
 
         @include v.P-normal;
         text-decoration: none;
@@ -97,7 +94,6 @@
         align-items: center;
         min-height: 743px;
         width: 100%;
-        box-sizing: border-box;
 
         background-image: url('./images/header-img-2.jpg');
         background-repeat: no-repeat;

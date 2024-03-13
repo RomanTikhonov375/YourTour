@@ -1,5 +1,3 @@
-@use './variables' as v;
-
 @include v.for-size(tablet) {
     .card-display1024-none {
         display: none;

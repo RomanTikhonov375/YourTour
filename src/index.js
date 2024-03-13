@@ -11,12 +11,12 @@ function onCrollHandler() {
     if (y > 450) {
         headerTitle.style.paddingTop = '93.54px';
         header.style.position = 'fixed';
-        headerLogo.src = logoBlack;
+        headerLogo.classList.add('header__logo-onScroll');
         header.classList.add('header__scroll')
     } else {
         header.classList.remove('header__scroll')
         header.style.position = 'relative';
-        headerLogo.src = logo;
+        headerLogo.classList.remove('header__logo-onScroll');
         headerTitle.style.paddingTop = '0';
     }
 }

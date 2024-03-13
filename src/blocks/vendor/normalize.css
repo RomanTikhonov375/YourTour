@@ -102,6 +102,13 @@ strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+ p, h2,h3,h4,h5,h6,ul,fieldset  {
+  margin: 0;
+  padding: 0;
+ }
+
+
+
 code,
 kbd,
 samp {

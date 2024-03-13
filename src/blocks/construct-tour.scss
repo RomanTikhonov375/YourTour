@@ -1,5 +1,3 @@
-@use './variables' as v;
-
 .construct-tour {
     width: 90%;
     max-width: 1170px;
@@ -64,7 +62,6 @@
         flex-direction: row;
         gap: v.$gap-30;
         width: 100%;
-        @include v.paddingAndMargin(0,0);
         flex-shrink: 0;
 
         border: 0;
@@ -90,12 +87,12 @@
             width: 26px;
             height: 26px;
 
-            background: url('./images/radiobutton.svg') 0 0 no-repeat;
+            background: url('./images/radio-buttons-icons/radiobutton.svg') 0 0 no-repeat;
         }
     }
 
     input[type=radio]:checked+&__form-label-radio:before {
-        background: url('./images/radiobutton-checked.svg') 0 0 no-repeat;
+        background: url('./images/radio-buttons-icons/radiobutton-checked.svg') 0 0 no-repeat;
     }
 
     &__form-label-checkbox {
@@ -118,12 +115,12 @@
             width: 26px;
             height: 26px;
 
-            background: url('./images/checkboxbutton.svg') 0 0 no-repeat;
+            background: url('./images/checkbox-buttons-icons/checkboxbutton.svg') 0 0 no-repeat;
         }
     }
 
     input[type=checkbox]:checked+&__form-label-checkbox:before {
-        background: url('./images/checkbox-checked.svg') 0 0 no-repeat;
+        background: url('./images/checkbox-buttons-icons/checkbox-checked.svg') 0 0 no-repeat;
     }
 
     &__form-label {
@@ -318,12 +315,12 @@
                 width: 20px;
                 height: 20px;
 
-                background: url('./images/mobile-checkboxbutton.svg') 0 0 no-repeat;
+                background: url('./images/checkbox-buttons-icons/mobile-checkboxbutton.svg') 0 0 no-repeat;
             }
         }
 
         input[type=checkbox]:checked+&__form-label-checkbox:before {
-            background: url('./images/mobile-checkbox-checked.svg') 0 0 no-repeat;
+            background: url('./images/checkbox-buttons-icons/mobile-checkbox-checked.svg') 0 0 no-repeat;
         }
 
         &__form-label-radio {
@@ -333,12 +330,12 @@
                 width: 20px;
                 height: 20px;
 
-                background: url('./images/mobile-radiobutton.svg') 0 0 no-repeat;
+                background: url('./images/radio-buttons-icons/mobile-radiobutton.svg') 0 0 no-repeat;
             }
         }
 
         input[type=radio]:checked+&__form-label-radio:before {
-            background: url('./images/mobile-radiobutton-checked.svg') 0 0 no-repeat;
+            background: url('./images/radio-buttons-icons/mobile-radiobutton-checked.svg') 0 0 no-repeat;
         }
     }
 

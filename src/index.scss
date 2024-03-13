@@ -1,3 +1,13 @@
+@use './blocks/_variables' as v;
+
+:root {
+    box-sizing: border-box
+}
+
+*, *::before, *::after {
+    box-sizing: inherit
+}
+
 @import './blocks/vendor/normalize.css';
 
 @import './fonts/fonts.css';

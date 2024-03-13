@@ -1,6 +1,3 @@
-@use './variables' as v;
-
-
 .change-tour {
     display: flex;
     flex-direction: column;
@@ -14,7 +11,6 @@
         grid-template-columns: repeat(auto-fit, 370px);
         grid-auto-rows: 531px;
         max-width: 100%;
-        @include v.paddingAndMargin(0,0);
 
         list-style: none;
     }
@@ -27,7 +23,6 @@
     }
 
     &__link {
-        box-sizing: border-box;
 
         @include v.P-big;
         text-decoration: none;

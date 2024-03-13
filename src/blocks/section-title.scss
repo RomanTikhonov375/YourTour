@@ -1,8 +1,5 @@
-@use './variables' as v;
-
 .section-title {
     @include v.H2;
-    @include v.paddingAndMargin(0,0);
     text-align: center;
 }
 
