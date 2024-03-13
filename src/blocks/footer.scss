@@ -35,7 +35,7 @@
         color: v.$color-black;
         border-bottom: 1px solid transparent;
 
-        transition: 500ms;
+        transition: border 500ms;
 
         @media (hover: hover) {
             &:hover {

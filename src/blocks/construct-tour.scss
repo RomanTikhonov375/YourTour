@@ -13,7 +13,7 @@
 
         cursor: pointer;
 
-        transition: background-color 0.3s ease-in;
+        transition: background-color 300ms ease-in;
 
         &:hover {
             background-color: v.$color-green-300;
@@ -34,7 +34,7 @@
 
         cursor: pointer;
 
-        transition: background-color 0.3s ease-in;
+        transition: background-color 300ms ease-in;
 
         @media (hover: hover) {
             &:hover {
@@ -152,7 +152,7 @@
         border: 1px solid v.$color-biege-200;
         background: v.$color-biege-100;
 
-        transition: background-color 0.3s ease-in;
+        transition: background-color 300ms ease-in;
 
         resize: none;
 

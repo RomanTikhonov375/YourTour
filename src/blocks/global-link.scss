@@ -2,7 +2,7 @@
     color: v.$color-black;
     text-decoration: none;
    
-    transition: 500ms;
+    transition: border 500ms;
     border-bottom: 1px solid transparent;
     @media (hover: hover) {
         &:hover {

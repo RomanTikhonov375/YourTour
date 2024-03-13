@@ -130,7 +130,7 @@
 
         cursor: pointer;
     
-        transition: 500ms;
+        transition: border 500ms;
         @media (hover: hover) {
             &:hover {
                 border-color: inherit;

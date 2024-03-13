@@ -30,7 +30,7 @@
         color: v.$color-black;
         border-bottom: 1px solid transparent;
 
-        transition: 500ms;
+        transition: border 500ms;
 
         cursor: pointer;
 
@@ -41,7 +41,7 @@
 
             color: v.$color-orange-200;
 
-            transition: color 0.3s;
+            transition: color 300ms;
         }
 
         &:target {
@@ -50,7 +50,7 @@
 
             color: v.$color-orange-200;
 
-            transition: color 0.3s;
+            transition: color 300ms;
         }
 
         &:hover {

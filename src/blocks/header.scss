@@ -48,7 +48,7 @@
         background-color: rgba(241, 243, 242, 0.8);
         backdrop-filter: blur(10px);
 
-        transition: background-color 0.5s ease;
+        transition: background-color 500ms ease;
     }
 
     &__navigation {
@@ -80,7 +80,7 @@
         color: inherit;
         border-bottom: 1px solid transparent;
 
-        transition: 500ms;
+        transition: border 500ms;
 
         @media (hover: hover) {
             &:hover {
@@ -132,14 +132,14 @@
         &:hover {
             background-color: v.$color-orange-200;
 
-            transition: background-color 1s;
+            transition: background-color 1000ms;
         }
 
         &:active {
             color: v.$color-black;
             background-color: v.$color-orange-100;
 
-            transition: background-color 1s;
+            transition: background-color 1000ms;
         }
     }
 
