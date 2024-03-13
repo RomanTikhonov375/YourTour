@@ -14,15 +14,14 @@
 
     &__image {
         z-index: 0;
+
         display: block;
         width: 370px;
         height: 370px;
         flex-shrink: 0;
-
     
         border-radius: 50px;
         object-fit: cover;
-
     }
 
     &__text-wrapper {

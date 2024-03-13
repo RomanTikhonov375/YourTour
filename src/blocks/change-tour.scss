@@ -23,7 +23,6 @@
     }
 
     &__link {
-
         @include v.P-big;
         text-decoration: none;
 
@@ -33,7 +32,6 @@
         transition: border 500ms;
 
         cursor: pointer;
-
 
         &:active {
             text-decoration: underline;
@@ -87,8 +85,9 @@
         &__navigation {
             flex-wrap: wrap;
             justify-content: center;
-            margin: 30px 21px 50px;
             gap: v.$gap-10;
+            margin: 30px 21px 50px;
+       
         }
 
         &__link {

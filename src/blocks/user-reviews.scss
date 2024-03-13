@@ -5,12 +5,11 @@
     align-items: center;
 
     &__list {
-        width: 1170px;
         display: flex;
         gap: v.$gap-30;
+        width: 1170px;
+
         list-style: none;
-       
-       
     }
 
     &__card-user-wrapper {
@@ -20,8 +19,9 @@
     }
 
     &__card-user-tour {
-        color: v.$color-gray-300;
         @include v.P-small;
+
+        color: v.$color-gray-300;
     }
 
     &__card-user-name {
@@ -46,13 +46,14 @@
 
         display: flex;
         flex-direction: column;
-        padding: 40px;
         justify-content: space-between;
-        min-height: 673px;
-        background-color: v.$color-biege-200;
-        border-radius: 50px;
         flex: 1 0 0;
         align-self: stretch;
+        padding: 40px;
+        min-height: 673px;
+
+        background-color: v.$color-biege-200;
+        border-radius: 50px;
     }
 
     @include v.for-size(desktop) {

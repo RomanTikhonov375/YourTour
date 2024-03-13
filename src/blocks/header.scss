@@ -6,10 +6,10 @@
 
     &__wrapper {
         display: flex;
-        width: 71%;
         justify-content: space-around;
-        padding: 30px 0 30px;
         align-items: center;
+        width: 71%;
+        padding: 30px 0 30px;
 
         color: v.$color-white;
     }
@@ -73,7 +73,6 @@
     }
 
     &__link {
-
         @include v.P-normal;
         text-decoration: none;
 
@@ -187,13 +186,15 @@
             height: auto;
             margin-top: 52px;
             margin-bottom: 40px;
+
             @include v.Mobile-H1;
         }
 
         &__subtitle {
-            @include v.Mobile-P-normal;
             width: 300px;
             margin-bottom: 40px;
+
+            @include v.Mobile-P-normal;
         }
 
         &__scroll {
@@ -211,16 +212,20 @@
         }
 
         &__contact {
-            @include v.Mobile-P-normal;
             height: 22px;
             width: 124px;
+
+            @include v.Mobile-P-normal;
+
         }
 
         &__button {
-            @include v.Mobile-P-small;
-            border-width: 1px;
             padding: 5px 20px 5px;
             margin-bottom: 58px;
+
+            @include v.Mobile-P-small;
+            
+            border-width: 1px;
         }
     }
 

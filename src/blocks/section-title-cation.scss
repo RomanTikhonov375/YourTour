@@ -1,10 +1,11 @@
 .section-title-cation {
     width: 418px;
-    color: v.$color-gray-300;
-    @include v.P-normal;
-    text-align: center;
     margin: 30px auto 96px;
 
+    @include v.P-normal;
+    text-align: center;
+
+    color: v.$color-gray-300;
 }
 
 @include v.for-size(mobile) {

@@ -13,7 +13,6 @@
         &:hover .card-moreinfo-button {
             background-color: v.$color-green-400 ;
             border-radius: 50px;
-
         }
 
         &:hover &__image {
@@ -63,7 +62,6 @@
     }
 
     &__title {
-
         @include v.H3;
 
         color: v.$color-white;
